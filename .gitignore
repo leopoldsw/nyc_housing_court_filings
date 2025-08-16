@@ -208,6 +208,8 @@ __marimo__/
 
 # Project data
 data/processed/
+data/raw/
+data/uploads/
 
 #Mac
 .DS_Store
