@@ -46,25 +46,15 @@ print(f'The dataset (post 2019) has {df_2019.shape[0]:,} rows')
 
 
 # Create dataset name
-filename_2019 = f'nyc_hcf_from_2019_(updated_{last_updated_date}).csv'
-file_2019 = os.path.join('data', 'processed', filename_2019)
+filename_2019 = f'nyc_hcf_from_2019.csv'
+file_2019 = os.path.join('data', 'uploads', filename_2019)
 
-filename_2019_upload = f'nyc_hcf_from_2019.csv'
-file_2019_upload = os.path.join('data', 'uploads', filename_2019_upload)
+filename_complete = f'nyc_hcf.csv'
+file_complete = os.path.join('data', 'uploads', filename_complete)
 
-
-filename_complete = f'nyc_hcf_(updated_{last_updated_date}).csv'
-file_complete = os.path.join('data', 'processed', filename_complete)
-
-filename_complete_upload = f'nyc_hcf.csv'
-file_complete_upload = os.path.join('data', 'uploads', filename_complete_upload)
-
-# Ensure output directories exist
-os.makedirs(os.path.join('data', 'processed'), exist_ok=True)
+# Ensure output directory exists
 os.makedirs(os.path.join('data', 'uploads'), exist_ok=True)
 
 # Save the dataset
 df_2019.to_csv(file_2019, index=False)
 df_complete.to_csv(file_complete, index=False)
-df_2019.to_csv(file_2019_upload, index=False)
-df_complete.to_csv(file_complete_upload, index=False)
