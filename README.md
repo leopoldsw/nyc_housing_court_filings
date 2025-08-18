@@ -14,6 +14,13 @@ Only certain variables are selected:
 - Zipcode of the property (zip)
 
 
+## Data Files
+
+- **nyc_hcf.csv**: Complete dataset containing all NYC housing court filings with available data (no date restriction)
+- **nyc_hcf_from_2019.csv**: Filtered dataset containing only NYC housing court filings from January 1, 2019 onwards
+
+Both files contain landlord-tenant cases filtered to NYC zip codes with the variables listed above.
+
 ## Source Source
 
 Raw data files are created by the Housing Data Coalition (HDC). URL is https://github.com/austensen/oca.
