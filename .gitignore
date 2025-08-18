@@ -206,10 +206,11 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Project data
-data/processed/
-data/raw/
-data/uploads/
-
 #Mac
 .DS_Store
+
+
+# Temp Data
+
+data/processed/
+data/uploads/*.csv
